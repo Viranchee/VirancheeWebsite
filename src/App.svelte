@@ -1,23 +1,11 @@
 <script>
-  const world = 'postcss'; // edit world and save to see hmr update
+  const world = "postcss"; // edit world and save to see hmr update
 </script>
 
-<style>
-  h1 {
-    color: orangered; /* change color an save to see hmr update */
-    /* you can also use css nesting
-    & .world {
-      font-size: 2rem;
-    }
-    */
-  }
-  .world {
-    @apply text-green-500 italic; /*  here's some tailwind apply */
-  }
-</style>
-
-<h1 class="border border-current rounded p-4 m-4">
-  <!-- tailwind classes in svelte template -->
+<h1 class="border border-current rounded p-4 m-4 text-red-500">
   Hello
-  <span class="world">{world}</span>
+  <span class="world bg-blue-50 px-1 italic text-green-500">{world}</span>
 </h1>
+
+<style>
+</style>
