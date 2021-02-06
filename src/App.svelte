@@ -1,4 +1,7 @@
 <script>
+  import Body from "./Components/Body.svelte";
+  import Footer from "./Components/Footer.svelte";
+  import Header from "./Components/Header.svelte";
   import Tailwindcss from "./Components/Tailwindcss.svelte";
 
   export let name;
@@ -6,12 +9,9 @@
 
 <main>
   <Tailwindcss />
-  <h1 class="font-bold text-green-500">Title</h1>
-  <h1>Hello {name}!</h1>
-  <p>
-    Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
-    how to build Svelte apps.
-  </p>
+  <Header />
+  <Body {name} />
+  <Footer />
 </main>
 
 <style>
