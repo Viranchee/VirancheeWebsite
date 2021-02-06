@@ -1,11 +1,29 @@
 <script>
-  const world = "postcss"; // edit world and save to see hmr update
+  import Tailwindcss from "./Components/Tailwindcss.svelte";
+
+  export let name;
 </script>
 
-<h1 class="border border-current rounded p-4 m-4 text-red-500">
-  Hello
-  <span class="world bg-blue-400 px-1 italic text-green-500">{world}</span>
-</h1>
+<main>
+  <Tailwindcss />
+  <h1 class="font-bold text-green-500">Title</h1>
+  <h1>Hello {name}!</h1>
+  <p>
+    Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
+    how to build Svelte apps.
+  </p>
+</main>
 
 <style>
+  main {
+    text-align: center;
+    padding: 1em;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  @media (min-width: 640px) {
+    main {
+      max-width: none;
+    }
+  }
 </style>
