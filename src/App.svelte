@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
   import Body from "./Components/Body.svelte";
   import Footer from "./Components/Footer.svelte";
   import Header from "./Components/Header.svelte";
   import Tailwindcss from "./Components/Tailwindcss.svelte";
 
-  export let name;
+  export let name: string;
 </script>
 
 <main>
